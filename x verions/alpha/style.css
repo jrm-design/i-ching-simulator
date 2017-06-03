@@ -1,0 +1,85 @@
+/* --- Project EyeJing --- */
+body * {
+  font-size: 16px;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: none;
+  font-family: helvetica, sans-serif;
+}
+
+/* --- Layout --- */
+#wrap {
+  max-width: 1000px;
+  width: 100%;
+  margin: 25px auto;
+  background: rgba(255,255,230,1);
+  padding: 25px;
+}
+header {
+}
+section {
+  float: left;
+  width: 50%;
+}
+aside {
+  float: left;
+  width: 50%;
+}
+footer {
+  clear:both;
+}
+
+/* --- Type --- */
+h1 {
+  padding: 15px;
+  font-size: 1.85em;
+  font-weight: 400;
+}
+h2,h3 {
+  padding: 15px;
+  font-size: 1.25em;
+  font-weight: 400;
+}
+h4,h5,h6 {
+  padding: 15px;
+  font-size: 0.85em;
+  font-weight: 400;
+}
+p, li {
+  padding: 15px;
+  line-height: 1.5;
+}
+button {
+  padding: 15px;
+  margin: 15px;
+  border-radius: 5px;
+}
+
+/* --- Hexagram Styles --- */
+#hexagram {
+  display: block;
+  width: 100%;
+  height: 100%;
+  min-height: 306.5px;
+  background: rgba(0,0,0,0.1);
+  list-style-position: inside;
+  padding-top: 2%;
+}
+#hexagram li {
+  display: block;
+  height: 100%;
+  margin: 2%;
+  margin-top: 0;
+  border: solid 5px rgba(0,0,0,0);
+}
+#hexagram li.yang-static, #hexagram li.yang-changing {
+  background: rgba(255,0,0,1);
+}
+
+#hexagram li.umm-static, #hexagram li.umm-changing {
+  background: linear-gradient(to right,  rgba(0,0,255,1) 0%,rgba(0,0,255,1) 44%,rgba(0,0,0,0) 45%,rgba(0,0,0,0) 55%,rgba(0,0,255,1) 56%,rgba(0,0,255,1) 100%);
+}
+#hexagram li.umm-changing, #hexagram li.yang-changing {
+  border-right: solid 5px rgba(255,255,255,1);
+}

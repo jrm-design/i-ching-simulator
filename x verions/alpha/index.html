@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Testing</title>
+  <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+  <div id="wrap">
+    <header>
+      <h1>Simulator</h1>
+      <p>On click, randomly generate a type of line. 3 of these lines will determine which type of trigam the object is. Two sets of trigams combine to form the hexagram. The ID of the hexagram correlates to the message to be delivered to the user.</p>
+    </header>
+    <section>
+      <h2>Input</h2>
+      <button id="toss">Generate Line</button>
+      <button id="reload">Reset</button>
+    </section>
+    <aside>
+      <h2>Output</h2>
+      <div id="output">
+        <ul id="hexagram"></ul>
+      </div>
+    </aside>
+    <footer>
+      <h2>Message</h2>
+      <div id="hexagram-message">
+      </div>
+    </footer>    
+  </div>
+  <script src="http://localhost:8888/wp-includes/js/jquery/jquery.js"></script>
+  <script type="text/javascript" src="messages.js"></script>
+  <script type="text/javascript" src="generator.js"></script>
+</body>
+</html>
